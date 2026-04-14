@@ -6,7 +6,7 @@ int main(){
     char op[7];
     int num1,num2;
     while(1){
-        if(scanf("%5s %d %d",op,&num1,&num2)!=3)
+        if(scanf("%s %d %d",op,&num1,&num2)!=3)
             break;
 
         char libname[16]="./lib";
