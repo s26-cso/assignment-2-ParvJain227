@@ -111,7 +111,7 @@ addi t0,x0,8
 mul t1,t2,t0
 add t4,s2,t1
 ld t3,0(t4)             #arr[j]
-bgt t3,t5,cond          #arr[j]>arr[i],found NGE,stop popping
+blt t5,t3,cond          #arr[j]>arr[i],found NGE,stop popping
 addi s6,s6,-1           #pop
 jal x0,loop3start
 loop3end:

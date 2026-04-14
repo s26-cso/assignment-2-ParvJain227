@@ -165,7 +165,7 @@ getAtMost:
     beq s1,x0,end11
     lw t0,0(s1)
     beq t0,s0,end12
-    bgt t0,s0,end13
+    blt s0,t0,end13
 
     #root->val < val:recurse right,if right returns -1 use root->val
     mv a0, s0
